@@ -22,8 +22,8 @@ double step; //dx
 #define NUM_THREADS 4 //Maximum number of requested threads
 
 void main(){
-	int nthreads;
-	double pi;
+	
+	double pi = 0.0;
 	step = 1.0/(double) num_steps;
 	omp_set_num_threads(NUM_THREADS); //Same as before
 
@@ -33,13 +33,15 @@ void main(){
 		double x, sum; //Sum is now thread local
 		id = omp_get_thread_num();
 		nthrds = omp_get_num_threads();
-		if(id == 0) nthreads = nthrds;
-		for(i = id, sum=0.0; i<num_steps; i=i+nthreads){
+		for(i = id, sum=0.0; i<num_steps; i=i+nthrds){
 			x = (i+0.5)*step;
 			sum += 4.0/(1.0+x*x);
 		}
+
 #pragma omp critical
-		pi += sum*step; //Mutually exclusive update
+	pi += sum*step; //Mutually exclusive update
+	
 	}
+
 	printf("The value of pi is: %f\n", pi);
 }
