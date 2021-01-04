@@ -45,7 +45,7 @@ Possible answer key for the mandel wrong challenge problem
 The pi program with a loop reduction and the correct memory sharing (private x)
 
 
-### Matt Cufari
+### Matthew Cufari
 ### Syracuse University
 ### January 2021
 ### Innovate Orange Technology Team  
