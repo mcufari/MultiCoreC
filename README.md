@@ -46,6 +46,6 @@ The pi program with a loop reduction and the correct memory sharing (private x)
 
 
 ### Matthew Cufari
-### Syracuse University
+### Syracuse University Computer Science
 ### January 2021
 ### Innovate Orange Technology Team  
