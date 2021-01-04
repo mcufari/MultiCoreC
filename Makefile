@@ -48,4 +48,6 @@ all:
 	@make -s mandel_correct
 
 clean:
-	@rm -f build/*	
+	@rm -f build/hello
+	@rm -f build/pi_*
+	@rm -f build/mandel_*
