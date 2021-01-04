@@ -1,3 +1,17 @@
+/*
+ * Parallel pi calculator using array padding to avoid memory collisions
+ *
+ * Author: Matt Cufari
+ * Version 1.0.0
+ * Date Created: Dec 18 2020
+ * Date last modified: Jan 4 2021
+ *
+ */
+
+/*
+ * This program is extra content if there is time to cover
+ */
+
 #include "omp.h"
 #include <stdio.h>
 

@@ -1,3 +1,18 @@
+/*
+ *
+ * An incorrect parallel implementation of computing the area of the mandelbrot set. 
+ * Can you figure out how to fix it?
+ *
+ * Author: Matt Cufari
+ * Version: 1.2.0
+ * Date Created Jan 4 2021
+ * Date Last Modified Jan 4 2021
+ *
+ */
+
+
+
+
 #include <omp.h>
 #include <stdio.h>
 
@@ -6,12 +21,14 @@
 
 struct d_complex{
 	double r; double i;
-};
+}; //Complex data type
 
-void testpoint(struct d_complex);
+void testpoint(struct d_complex); //Declaration of function
 
-struct d_complex c;
-int numoutside = 0;
+struct d_complex c; //Point C in complex plane
+int numoutside = 0; //Number of points outside of set
+
+//This is where the comments end. Good luck!
 
 int main(){
 	int i,j;

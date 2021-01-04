@@ -1,3 +1,15 @@
+/*
+ * A parallel pi program using atomic operations
+ *
+ * Author: Matt Cufari
+ * Version: 1.0.0
+ * Date Created Dec 18 2020
+ * Date Last Modified Jan 4 2021
+ */
+
+
+
+
 #include <stdio.h>
 #include <omp.h>
 

@@ -1,3 +1,16 @@
+/*
+ *
+ * And we've come full circle. The serial pi-program modified by 2-ish lines to become parallel
+ *
+ * Author: Matt Cufari
+ * Version 1.0.0
+ * Date Created Jan 4 2021
+ * Date Last Modified Jan 4 2021
+ *
+ */
+
+
+
 #include <omp.h>
 #include <stdio.h>
 
